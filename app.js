@@ -5,7 +5,7 @@ const dotenv= require("dotenv")
 const colors= require("colors")
 const path= require('path')
 const connectdb = require("./config/connectdb")
-const cookieParser = require("cookie-parser")
+
 
 dotenv.config()
 
@@ -19,7 +19,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(morgan('dev'))
 app.use(cors())
-app.use(cookieParser)
+
 
 
 // user routes
